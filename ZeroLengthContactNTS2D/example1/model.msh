@@ -1,0 +1,19 @@
+MESH "4NMESH" dimension 3 ElemType Quadrilateral Nnode 4
+#color 0 255 0
+
+Coordinates
+1		0	0	0	
+2		1	0	0	
+3		1	1	0	
+4		0	1	0	
+5		1	1	0	
+6		1	2	0	
+7		0	2	0	
+8		0	1	0	
+End coordinates
+
+Elements
+1		1	2	3	4	
+2		5	6	7	8	
+3		3	4	8	5	
+End elements
