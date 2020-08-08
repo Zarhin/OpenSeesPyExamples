@@ -47,8 +47,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../openseespy/openseespy-pip" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="pyconsole" />
   </component>
-  <component name="RunManager">
+  <component name="PyConsoleOptionsProvider">
+    <option name="myUseExistingConsole" value="true" />
+  </component>
+  <component name="RunManager" selected="Python.example2">
     <configuration name="example1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="OpenSeesPyExamples" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -71,8 +75,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="example2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OpenSeesPyExamples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ZeroLengthContactNTS2D/example2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ZeroLengthContactNTS2D/example2/example2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.example1" />
+      <item itemvalue="Python.example2" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.example2" />
         <item itemvalue="Python.example1" />
       </list>
     </recent_temporary>
@@ -89,6 +117,7 @@
       <updated>1596700847085</updated>
       <workItem from="1596700848970" duration="1415000" />
       <workItem from="1596720249159" duration="2672000" />
+      <workItem from="1596876780137" duration="2192000" />
     </task>
     <servers />
   </component>
@@ -108,26 +137,38 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="137" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596877279251">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="137" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596877279251" />
+    <state x="420" y="169" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596885961994">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="420" y="169" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596885961994" />
     <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1596721306517">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596721306517" />
-    <state width="1306" height="315" key="GridCell.Tab.0.bottom" timestamp="1596725035732">
+    <state width="1306" height="229" key="GridCell.Tab.0.bottom" timestamp="1596877292916">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1306" height="315" key="GridCell.Tab.0.bottom/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596725035732" />
-    <state width="1306" height="315" key="GridCell.Tab.0.center" timestamp="1596725035731">
+    <state width="1306" height="229" key="GridCell.Tab.0.bottom/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596877292916" />
+    <state width="1306" height="229" key="GridCell.Tab.0.center" timestamp="1596877292915">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1306" height="315" key="GridCell.Tab.0.center/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596725035731" />
-    <state width="1306" height="315" key="GridCell.Tab.0.left" timestamp="1596725035730">
+    <state width="1306" height="229" key="GridCell.Tab.0.center/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596877292915" />
+    <state width="1306" height="229" key="GridCell.Tab.0.left" timestamp="1596877292915">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1306" height="315" key="GridCell.Tab.0.left/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596725035730" />
-    <state width="1306" height="315" key="GridCell.Tab.0.right" timestamp="1596725035732">
+    <state width="1306" height="229" key="GridCell.Tab.0.left/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596877292915" />
+    <state width="1306" height="229" key="GridCell.Tab.0.right" timestamp="1596877292915">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1306" height="315" key="GridCell.Tab.0.right/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596725035732" />
+    <state width="1306" height="229" key="GridCell.Tab.0.right/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596877292915" />
+    <state x="184" y="13" key="SettingsEditor" timestamp="1596877289910">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="184" y="13" key="SettingsEditor/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596877289910" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1596701273505">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -135,5 +176,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OpenSeesPyExamples$example1.coverage" NAME="example1 Coverage Results" MODIFIED="1596724496747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ZeroLengthContactNTS2D" />
+    <SUITE FILE_PATH="coverage/OpenSeesPyExamples$example2.coverage" NAME="example2 Coverage Results" MODIFIED="1596877229035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ZeroLengthContactNTS2D/example2" />
   </component>
 </project>
