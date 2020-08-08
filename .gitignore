@@ -130,3 +130,6 @@ dmypy.json
 
 # GID result file
 *.res
+
+# pycharm file
+.idea
