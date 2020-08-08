@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6ebcc78-ca20-4e84-aed3-c7c6c645a651" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="3da9b912-11eb-4b78-8a20-d84f49031165" />
+  <component name="ProjectId" id="1fiVLzrvOXv4OuNxdrQMPDS1ANm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../openseespy/openseespy-pip" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager">
+    <configuration name="example1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OpenSeesPyExamples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ZeroLengthContactNTS2D" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ZeroLengthContactNTS2D/example1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.example1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6ebcc78-ca20-4e84-aed3-c7c6c645a651" name="Default Changelist" comment="" />
+      <created>1596700847085</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596700847085</updated>
+      <workItem from="1596700848970" duration="1415000" />
+      <workItem from="1596720249159" duration="2359000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1596721306517">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596721306517" />
+    <state width="1306" height="315" key="GridCell.Tab.0.bottom" timestamp="1596725035732">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1306" height="315" key="GridCell.Tab.0.bottom/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596725035732" />
+    <state width="1306" height="315" key="GridCell.Tab.0.center" timestamp="1596725035731">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1306" height="315" key="GridCell.Tab.0.center/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596725035731" />
+    <state width="1306" height="315" key="GridCell.Tab.0.left" timestamp="1596725035730">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1306" height="315" key="GridCell.Tab.0.left/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596725035730" />
+    <state width="1306" height="315" key="GridCell.Tab.0.right" timestamp="1596725035732">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1306" height="315" key="GridCell.Tab.0.right/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596725035732" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1596701273505">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596701273505" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/OpenSeesPyExamples$example1.coverage" NAME="example1 Coverage Results" MODIFIED="1596724496747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ZeroLengthContactNTS2D" />
+  </component>
+</project>
