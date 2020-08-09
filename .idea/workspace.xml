@@ -45,11 +45,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../openseespy/openseespy-pip" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Part" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="pyconsole" />
   </component>
   <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings>
+        <option name="useSoftWraps" value="true" />
+      </console-settings>
+    </option>
     <option name="myUseExistingConsole" value="true" />
   </component>
   <component name="RunManager" selected="Python.example2">
@@ -117,7 +122,9 @@
       <updated>1596700847085</updated>
       <workItem from="1596700848970" duration="1415000" />
       <workItem from="1596720249159" duration="2672000" />
-      <workItem from="1596876780137" duration="2192000" />
+      <workItem from="1596876780137" duration="9705000" />
+      <workItem from="1596935219700" duration="7889000" />
+      <workItem from="1596959325503" duration="1522000" />
     </task>
     <servers />
   </component>
@@ -141,38 +148,38 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="137" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596877279251" />
-    <state x="420" y="169" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596885961994">
+    <state x="420" y="169" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596888439458">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="420" y="169" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596885961994" />
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1596721306517">
+    <state x="420" y="169" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596888439458" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1596975864308">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596721306517" />
-    <state width="1306" height="229" key="GridCell.Tab.0.bottom" timestamp="1596877292916">
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596975864308" />
+    <state width="1306" height="229" key="GridCell.Tab.0.bottom" timestamp="1596898524399">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1306" height="229" key="GridCell.Tab.0.bottom/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596877292916" />
-    <state width="1306" height="229" key="GridCell.Tab.0.center" timestamp="1596877292915">
+    <state width="1306" height="229" key="GridCell.Tab.0.bottom/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596898524399" />
+    <state width="1306" height="229" key="GridCell.Tab.0.center" timestamp="1596898524399">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1306" height="229" key="GridCell.Tab.0.center/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596877292915" />
-    <state width="1306" height="229" key="GridCell.Tab.0.left" timestamp="1596877292915">
+    <state width="1306" height="229" key="GridCell.Tab.0.center/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596898524399" />
+    <state width="1306" height="229" key="GridCell.Tab.0.left" timestamp="1596898524399">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1306" height="229" key="GridCell.Tab.0.left/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596877292915" />
-    <state width="1306" height="229" key="GridCell.Tab.0.right" timestamp="1596877292915">
+    <state width="1306" height="229" key="GridCell.Tab.0.left/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596898524399" />
+    <state width="1306" height="229" key="GridCell.Tab.0.right" timestamp="1596898524399">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1306" height="229" key="GridCell.Tab.0.right/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596877292915" />
+    <state width="1306" height="229" key="GridCell.Tab.0.right/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596898524399" />
     <state x="184" y="13" key="SettingsEditor" timestamp="1596877289910">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="13" key="SettingsEditor/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596877289910" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1596701273505">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1596896934209">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596701273505" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738/-1680.0.1680.1020@0.0.1366.738" timestamp="1596896934209" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OpenSeesPyExamples$example1.coverage" NAME="example1 Coverage Results" MODIFIED="1596724496747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ZeroLengthContactNTS2D" />

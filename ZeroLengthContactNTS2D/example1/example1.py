@@ -46,7 +46,12 @@ phi = 16.0
 ops.opsfunc('element', 'zeroLengthContactNTS2D', 3, '-sNdNum', 2, '-mNdNum',
             2, '-Nodes', 3, 4, 8, 5, kn, kt, phi)
 
+mass = {}
+node_list = ops.opsfunc('getNodeTags')
+for node in node_list:
+    mass[node] = ops.opsfunc('nodeMass', node, 1, 2)
 
+print(mass)
 
 ops.opsfunc('fix', 1, 1, 1)
 ops.opsfunc('fix', 2, 0, 1)
