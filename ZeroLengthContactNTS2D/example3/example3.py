@@ -122,8 +122,9 @@ ops.opsfunc('analyze', 100)
 
 ops.opsfunc('printModel', 'node', *[node.tag for node in load_node])
 ops.opsfunc('wipe')
-ops.opsfunc()
+# ops.opsfunc()
 # load node displacement result
 disp = np.loadtxt('disp.txt')
 otg.node_result(node_list, [disp], ['Displacement'], 'Static Analysis',
                 time_column=False, file_name='example3.res')
+
