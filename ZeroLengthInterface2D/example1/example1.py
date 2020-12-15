@@ -4,7 +4,7 @@
 
 import numpy as np
 import part
-import openseesfunction as ops
+import opensees_tools as ops
 import opensees_to_gid as otg
 
 # point
@@ -20,9 +20,9 @@ line = part.Line([p0, p1])
 # mesh
 rec.set_seed(1)
 rec.set_seed(2, direction='horizontal')
-rec.nodes, rec.elements = rec.mesh()
+rec.mesh()
 line.set_seed(2)
-line.nodes, line.elements = line.mesh()
+line.mesh()
 
 # soil model
 ops.opsfunc('wipe')
@@ -72,7 +72,7 @@ nodes = soil_node + pile_node[-1::-1]
 ele = part.Element(nodes, id0='contact')
 ops.opsfunc('element', 'zeroLengthInterface2D', ele.tag, '-sNdNum',
             len(soil_node), '-mNdNum', len(pile_node), '-dof', 2, 3,
-            '-Nodes', *[node.tag for node in ele.nodes], 1e8, 1e8, 0.1)
+            '-Nodes', *[node.tag for node in ele.nodes], 1e8, 1e8, 16)
 # print gid
 ops.opsfunc('printGID', 'example1.msh')
 
@@ -81,6 +81,7 @@ ops.opsfunc('printGID', 'example1.msh')
 node_list = ops.opsfunc('getNodeTags')
 ops.opsfunc('recorder', 'Node', '-file', 'disp.txt', '-node', *node_list,
             '-dof', 1, 2, 3, 'disp')
+ops.opsfunc('recorder', 'Element', '-file', 'ele.txt', '-ele', 8, 'gap')
 
 # analysis option
 ops.opsfunc('integrator', 'LoadControl', 0.01)
@@ -91,13 +92,12 @@ ops.opsfunc('constraints', 'Plain')
 ops.opsfunc('system', 'ProfileSPD')
 ops.opsfunc('analysis', 'Static')
 ops.opsfunc('analyze', 100)
-
-ops.opsfunc('printModel', 'ele')
-ops.opsfunc('printModel', 'node')
+print(ops.opsfunc('eleResponse', 8, 'force'))
+# ops.opsfunc('printModel', 'ele')
+# ops.opsfunc('printModel', 'node')
 
 ops.opsfunc('wipe')
 
 disp = np.loadtxt('disp.txt')
 otg.node_result(node_list, [disp], ['Displacement'], 'Static', False,
                 'example1.res')
-
