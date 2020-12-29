@@ -69,20 +69,22 @@ element quad 17 29 30 41 40 1.0 PlaneStrain 1
 element quad 18 30 31 42 41 1.0 PlaneStrain 1
 element quad 19 31 32 43 42 1.0 PlaneStrain 1
 element quad 20 32 33 44 43 1.0 PlaneStrain 1
-element zeroLengthInterface2D 21 -sNdNum 11 -mNdNum 11 -dof 2 2 -Nodes 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 1000000000.0 0 0
+element zeroLengthInterface2D 21 -sNdNum 11 -mNdNum 11 -dof 2 2 -Nodes 22 21 20 19 18 17 16 15 14 13 12 23 24 25 26 27 28 29 30 31 32 33 100000000.0 100000000.0 16
 timeSeries Constant 1
 pattern Plain 1 1 {
-load 44 0.0 -100 }
+load 44 0.0 -0.1 }
 printGID example2.msh
 getNodeTags
 recorder Node -file disp.txt -node 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 -dof 1 2 disp
-integrator DisplacementControl 44 2 -0.001
+recorder Element -file ele.txt -ele 21 material 1 pressure
+eleResponse 21 pressure
+integrator DisplacementControl 44 2 -1e-05
 test EnergyIncr 1e-06 100 5
 algorithm Newton
 numberer RCM
 constraints Transformation
-system ProfileSPD
+system UmfPack
 analysis Static
 analyze 500
-printModel node 44 22
+eleResponse 21 material 1 pressure
 wipe

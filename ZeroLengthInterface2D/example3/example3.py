@@ -5,7 +5,7 @@
 
 import numpy as np
 import part
-import openseesfunction as ops
+import opensees_tools as ops
 import opensees_to_gid as otg
 
 # points
@@ -65,7 +65,6 @@ for node in side_nodes:
     ops.opsfunc('fix', node.tag, 1, 0)
 
 
-
 # pile model
 ops.opsfunc('model', 'basic', '-ndm', 2, '-ndf', 3)
 
@@ -94,9 +93,9 @@ for node in line.nodes:
     ele2 = part.Element([node, node2])
     arm_elements += [ele1, ele2]
     ops.opsfunc('element', 'elasticBeamColumn', ele1.tag, node.tag,
-                node1.tag, AREA*1E3, E*1e3, IZ*1e3, 1)
+                node1.tag, AREA * 1E3, E * 1e3, IZ * 1e3, 1)
     ops.opsfunc('element', 'elasticBeamColumn', ele2.tag, node.tag,
-                node2.tag, AREA*1E3, E*1e3, IZ*1e3, 1)
+                node2.tag, AREA * 1E3, E * 1e3, IZ * 1e3, 1)
 
 # pile elements
 for element in line.elements:
@@ -106,7 +105,7 @@ for element in line.elements:
 
 # boundary
 pile_bottom_node = part.Node.search([0.0, -10.0])
-ops.opsfunc('fix', pile_bottom_node[0].tag, 0, 1, 0)
+ops.opsfunc('fix', pile_bottom_node.tag, 0, 1, 0)
 
 # contact element
 left_arm_nodes = part.Node.search([-0.5, -10], [-0.5, 0], arm_nodes)
@@ -126,7 +125,7 @@ ele2 = part.Element(right_contact_nodes, id0='right_contact')
 ops.opsfunc('element', 'zeroLengthInterface2D', ele2.tag, '-sNdNum',
             len(right_soil_nodes), '-mNdNum', len(right_arm_nodes), '-dof',
             2, 3, '-Nodes', *[node.tag for node in right_contact_nodes],
-            1e8, 1e8, 0.0)
+            1e8, 1e8, 16)
 
 # print gid
 ops.opsfunc('printGID', 'example3.msh')
@@ -135,7 +134,7 @@ ops.opsfunc('printGID', 'example3.msh')
 ops.opsfunc('timeSeries', 'Linear', 1)
 ops.opsfunc('pattern', 'Plain', 1, 1)
 load_node = part.Node.search([0.0, 3.0])
-ops.opsfunc('load', load_node[0].tag, -1000.0, 0.0, 0.0)
+ops.opsfunc('load', load_node.tag, -1000.0, 0.0, 0.0)
 
 
 # recorder
@@ -145,7 +144,8 @@ ops.opsfunc('recorder', 'Node', '-file', 'disp.txt', '-node', *node_list,
 
 # analysis option
 ops.opsfunc('integrator', 'LoadControl', 0.01)
-ops.opsfunc('test', 'EnergyIncr', 1.0e6, 100, 5)
+# ops.opsfunc('test', 'EnergyIncr', 1, 100, 5)
+ops.opsfunc('test', 'FixedNumIter', 5, 5)
 ops.opsfunc('algorithm', 'Newton')
 ops.opsfunc('numberer', 'RCM')
 ops.opsfunc('constraints', 'Plain')
@@ -153,7 +153,7 @@ ops.opsfunc('system', 'ProfileSPD')
 ops.opsfunc('analysis', 'Static')
 ops.opsfunc('analyze', 100)
 
-ops.opsfunc('printModel', 'node', load_node[0].tag)
+ops.opsfunc('printModel', 'node', load_node.tag)
 
 ops.opsfunc('wipe')
 ops.opsfunc()

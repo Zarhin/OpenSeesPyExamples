@@ -25,10 +25,11 @@ element elasticBeamColumn 3 6 7 3600 4227 1080000 1
 element elasticBeamColumn 4 7 8 3600 4227 1080000 1
 element elasticBeamColumn 5 8 9 3600 4227 1080000 1
 element elasticBeamColumn 6 9 10 3600 4227 1080000 1
-element zeroLengthInterface2D 7 -sNdNum 2 -mNdNum 6 -dof 2 3 -Nodes 1 2 10 9 8 7 6 5 100000000.0 100000000.0 0.1
+element zeroLengthInterface2D 7 -sNdNum 2 -mNdNum 6 -dof 2 3 -Nodes 1 2 10 9 8 7 6 5 100000000.0 100000000.0 16
 printGID example1.msh
 getNodeTags
 recorder Node -file disp.txt -node 1 2 3 4 5 6 7 8 9 10 -dof 1 2 3 disp
+recorder Element -file ele.txt -ele 8 gap
 integrator LoadControl 0.01
 test EnergyIncr 1000000.0 100 5
 algorithm Newton
@@ -37,6 +38,5 @@ constraints Plain
 system ProfileSPD
 analysis Static
 analyze 100
-printModel ele
-printModel node
+eleResponse 8 force
 wipe
